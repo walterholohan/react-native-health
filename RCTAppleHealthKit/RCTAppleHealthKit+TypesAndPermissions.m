@@ -197,7 +197,7 @@
         return [HKObjectType workoutType];
     } else if ([@"Workout" isEqualToString: key]) {
         return [HKObjectType workoutType];
-    }else if ([@"WorkoutRoute" isEqualToString:key]){
+    } else if ([@"WorkoutRoute" isEqualToString:key]){
         return [HKSeriesType workoutRouteType];
     }
 
@@ -366,6 +366,11 @@
     // Workout
     if ([@"Workout" isEqualToString:key]) {
         return [HKObjectType workoutType];
+    }
+    
+    // Workout
+    if ([@"WorkoutRoute" isEqualToString:key]) {
+        return [HKSeriesType workoutRouteType];
     }
 
     // Lab and tests
